@@ -38,7 +38,7 @@ function ProductDetail() {
           {/* Product Image */}
           <div className="w-full h-[500px] bg-gray-100 border border-gray-200 overflow-hidden">
             <img
-              src={`/images/products/${product.image}`}
+              src={`/images/products/${encodeURIComponent(product.image)}`}
               alt={product.name}
               className="w-full h-full object-cover"
             />

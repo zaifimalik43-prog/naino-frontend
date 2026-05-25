@@ -65,7 +65,7 @@ function Shop() {
             >
               <div className="w-full h-72 bg-gray-100 border border-gray-200 group-hover:border-black transition overflow-hidden">
                 <img
-                  src={`/images/products/${product.image}`}
+                  src={`/images/products/${encodeURIComponent(product.image)}`}
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 />
